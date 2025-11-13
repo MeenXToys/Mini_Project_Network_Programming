@@ -2,7 +2,7 @@
 ## Network Scanner — Scan IP Range & Save Results to CSV  
 
 ### 📘 Project Overview
-This project is developed for the **SPG0463 (Network Programming)** course at the **German-Malaysian Institute (GMI)**.  
+This project is developed for the **SPG0463 (Network Programming)** mini project course at the **German-Malaysian Institute (GMI)**.  
 It demonstrates a basic **network scanning tool** that checks a range of IPv4 addresses to determine which hosts have an open TCP port (default: port 80).  
 The tool uses Python’s `socket` module to test connectivity and stores all results in a structured CSV file.  
 
