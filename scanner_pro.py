@@ -204,12 +204,12 @@ def main():
             import signal
             signal.signal(signal.SIGINT, signal_handler)
 
-            start_ip = input("\nEnter Start IP (e.g. 192.168.1.1): ").strip()
+            start_ip = input("\nEnter Start IP (e.g. 10.0.0.0): ").strip()
             if not start_ip:
                 print("No IP entered. Exiting.")
                 break
                 
-            end_ip = input("Enter End IP (e.g. 192.168.1.10): ").strip()
+            end_ip = input("Enter End IP (e.g. 10.0.1.0): ").strip()
             if not end_ip:
                 print("No IP entered. Exiting.")
                 break
