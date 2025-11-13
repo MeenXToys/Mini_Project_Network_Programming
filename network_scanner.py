@@ -147,8 +147,8 @@ def main():
     print("=== Network Scanner (SPG0463) ===\n")
 
     try:
-        start_ip = input("Enter Start IP (e.g. 192.168.1.1): ").strip()
-        end_ip = input("Enter End IP (e.g. 192.168.1.10): ").strip()
+        start_ip = input("Enter Start IP (e.g. 10.0.0.0): ").strip()
+        end_ip = input("Enter End IP (e.g. 10.0.1.0): ").strip()
         port = input("Enter Port [Default 80]: ").strip()
         timeout = input("Enter Timeout in seconds [Default 1.0]: ").strip()
 
