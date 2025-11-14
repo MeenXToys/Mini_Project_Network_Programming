@@ -31,37 +31,48 @@ This tool scans a user-defined IP range, checks TCP port connectivity, resolves 
 === Network Scanner (SPG0463) ===
 
 Enter Start IP (e.g. 10.0.0.0): 10.0.0.0
+
+
 Enter End IP (e.g. 10.0.1.0): 10.0.1.0
+
 
 Scanning 257 IP addresses on port 80...
 
+
 Online IP Addresses and Hostnames:
+
 10.0.0.27 - mikrotik.gmi.edu
+
 10.0.0.21 - vinchin.gmi.edu
+
 10.0.0.28 - obe.gmi.edu.my
+
 ...
 
+
 === Scan Summary ===
+
 Total IPs Scanned: 257
+
 Open Hosts Found: 10
+
 Time Elapsed: 8.79 seconds
+
 Results saved to: scan_results_20251114_022916.csv
 
-yaml
-Copy code
 
 ---
 
 ## 📊 Sample CSV Output
 
 ip,hostname,port,status,rtt_ms,timestamp,error
-10.0.0.27,mikrotik.gmi.edu,80,open,2.91,14/11/2025 02:31,
-10.0.0.21,vinchin.gmi.edu,80,open,4.33,14/11/2025 02:31,
-10.0.0.28,obe.gmi.edu.my,80,open,2.73,14/11/2025 02:31,
-...
 
-yaml
-Copy code
+10.0.0.27,mikrotik.gmi.edu,80,open,2.91,14/11/2025 02:31,
+
+10.0.0.21,vinchin.gmi.edu,80,open,4.33,14/11/2025 02:31,
+
+10.0.0.28,obe.gmi.edu.my,80,open,2.73,14/11/2025 02:31,
+
 
 ---
 
@@ -70,72 +81,84 @@ Copy code
 ### 1️⃣ Install Python 3  
 Make sure your system has **Python 3.8+**.
 
+---
+
 ### 2️⃣ Clone the Repository  
+
 ```bash
 git clone https://github.com/your-username/network-scanner.git
 cd network-scanner
-3️⃣ Run the Program
-bash
-Copy code
+````
+
+---
+
+### 3️⃣ Run the Program
 python network_scanner.py
-4️⃣ Follow On-Screen Prompts
+
+
+### 4️⃣ Follow On-Screen Prompts
 Enter:
 
 Start IP
 
+
 End IP
+
 
 Port (optional)
 
+
 Timeout (optional)
+
 
 Results will be displayed and exported as a CSV file.
 
-⚠️ Legal Disclaimer
-This tool is intended for educational and authorized use only.
-
-Do NOT scan networks or hosts without explicit permission.
-Unauthorized scanning may violate:
-
-Local laws
-
-Institutional policies
-
-Ethical cybersecurity practices
-
-Use responsibly.
-
-👨‍💻 Authors
-Name	ID
-Muhaimin Bin Mahadi	CBS24070656
-Akmal Mustofa	–
-Amir Arshad	–
-
-Course: SPG 0463 – Network Programming
-Supervisor: Ms. Noor Atiqah Mohd Yaacob @ Yahya
-Institution: German-Malaysian Institute (GMI)
-
-📄 License
-This project is licensed under the MIT License.
-You are free to use, modify, and distribute this tool with proper attribution.
-
-⭐ Support This Project
-If you find this project useful, consider giving the repo a:
-
-👉 ⭐ Star on GitHub
-
-It helps motivate future development!
-
-yaml
-Copy code
 
 ---
 
-If you want, I can also generate:
+### ⚠️ Legal Disclaimer
+This tool is intended for educational and authorized use only.
 
-✨ **A nicer version with emojis for every section**  
-📌 **A version with shields.io badges for repo size, commits, last update**  
-📄 **A PDF version for your lecturer**  
-🧪 **A test folder + sample unit tests**
+Do NOT scan networks or hosts without explicit permission.
 
-Just tell me!
+Unauthorized scanning may violate:
+
+
+Local laws
+
+
+Institutional policies
+
+
+Ethical cybersecurity guidelines
+
+
+Use responsibly.
+
+
+---
+
+### 👨‍💻 Authors
+
+| Name                 | ID            |
+|----------------------|---------------|
+| **Muhaimin Bin Mahadi** | CBS24070656   |
+| **Akmal Mustofa**       | CBS24070556   |
+| **Amir Arshad**         | CBS24070519   |
+
+**Course:** SPG 0463 – Network Programming  
+**Supervisor:** Ms. Noor Atiqah Mohd Yaacob @ Yahya  
+**Institution:** German-Malaysian Institute (GMI)
+
+
+---
+
+### 📄 License
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this tool with proper attribution.
+
+---
+
+### ⭐ Support This Project
+If you find this project useful, consider giving the repo a:
+
